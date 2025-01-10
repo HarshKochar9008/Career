@@ -3,14 +3,14 @@
 
 
 @font-face {
-    font-family: 'Gilroy';
+    font-family:public'Gilroy';
     src: url('/src/assets/fonts/Gilroy-Regular.ttf') format('truetype');
     font-weight: 400; /* Regular */
   }
   
   @font-face {
     font-family: 'Gilroy';
-    src: url('/src/assets/fonts/Gilroy-Bold.ttf') format('truetype');
+    src: url('/public/assets/fonts/Gilroy-Bold.ttf') format('truetype');
     font-weight: 700; /* Bold */
   }
   

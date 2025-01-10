@@ -39,7 +39,7 @@ const  App = () => {
         <img
           className={styles.launchingAProject}
           alt=""
-          src="/src/assets/Launching a project.png"
+          src="/public/assets/Launching a project.png"
         />
       </div>
     </div>
