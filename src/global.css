@@ -1,0 +1,40 @@
+
+@import url("https://fonts.googleapis.com/css2?family=TT+Hoves:wght@400;700&display=swap");
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/src/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/src/assets/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+  }
+  
+body {
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  overflow: hidden;
+}
+:root {
+  /* fonts */
+  --font-tt-hoves: "TT Hoves";
+
+
+  /* font sizes */
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --white: #fff;
+  --dark: #1d1f16;
+  --dark1: #0e1617;
+  --grey: #54564b;
+  --primary-color: #d6ff2f;
+  --yellow-light: #fef7e3;
+
+  /* Border radiuses */
+  --br-7xs: 6px;
+}
