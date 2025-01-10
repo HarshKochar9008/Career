@@ -6,7 +6,7 @@ const  App = () => {
   return (
     <div className={styles.comingSoonSection2} style={{ fontFamily: 'Gilroy', fontWeight: 700 }}>
       <div className={styles.header}>
-        <div className={styles.companyName}>Career Compass</div>
+        <div className={styles.companyName}>Career Campus</div>
       </div>
       <div className={styles.bgWrapper}>
         <div className={styles.bg} />
