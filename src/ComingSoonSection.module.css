@@ -1,166 +1,210 @@
-
-
 @font-face {
-    font-family: 'Gilroy';
-    src: url('/fonts/GILROY-BOLD.TTF') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: "Gilroy";
+  src: url("/fonts/GILROY-BOLD.TTF") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 .header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 100; /* Ensure it is on top */
-  }
-  .companyName {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #333; /* Adjust color as needed */
-  }  
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100; /* Ensure it is on top */
+}
+.companyName {
+  font-family: "Gilroy", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333; /* Adjust color as needed */
+}
 .bg {
-    background-color: var(--yellow-light);
-  }
-  .bg,
-  .bgWrapper {
+  background-color: var(--yellow-light);
+}
+.bg,
+.bgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1840px;
+  height: 855px;
+}
+.barChild,
+.barItem {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: var(--br-7xs);
+  background-color: var(--dark1);
+  border: 1px solid var(--dark1);
+  box-sizing: border-box;
+  width: 385px;
+  height: 60px;
+}
+.groups {
+  color: var(--dark1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 389px;
+  height: 64px;
+}
+.barItem {
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  border: 1px solid var(--dark);
+}
+.yourEmailAddress {
+  position: absolute;
+  top: 16px;
+  font-family: Gilroy;
+  left: 16px;
+  line-height: 28px;
+}
+.bar,
+.buttonChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 389px;
+  height: 64px;
+}
+.buttonChild {
+  top: 6px;
+  left: 4px;
+  border-radius: var(--br-7xs);
+  background-color: var(--dark);
+  border: 1px solid var(--dark);
+  box-sizing: border-box;
+  width: 158px;
+  height: 60px;
+}
+.subscribe {
+  position: relative;
+  line-height: 30px;
+}
+.emailInput {
+  width: 100%;
+  padding: 1px 1px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+}
+
+.subscribeWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-7xs);
+  background-color: var(--primary-color);
+  border: 1px solid var(--dark);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 15px 37px;
+}
+.button {
+  position: absolute;
+  top: 0;
+  left: 408px;
+  width: 162px;
+  height: 64px;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--dark);
+}
+.areYouReady,
+.comingSoon,
+.search {
+  position: absolute;
+  left:500px;
+  width: 520px;
+}
+.comingSoon{
+    font-size: var(--font-size-md);
+}
+.search {
+  top: 501px;
+  left: 500px;
+  height: 64px;
+  text-align: left;
+}
+.areYouReady,
+.comingSoon {
+  display: inline-block;
+}
+.detail{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 1840px;
-    height: 855px;
-  }
-  .barChild,
-  .barItem {
+    top: -50px;
+    left: 5px;
+    width: 520px;
+}
+.vector1 { 
     position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: var(--br-7xs);
-    background-color: var(--dark1);
-    border: 1px solid var(--dark1);
-    box-sizing: border-box;
-    width: 385px;
-    height: 60px;
-  }
-  .barItem {
-    top: 0;
-    left: 0;
-    background-color: var(--white);
-    border: 1px solid var(--dark);
-  }
-  .yourEmailAddress {
-    position: absolute;
-    top: 16px;
-    font-family: Gilroy;
-    left: 16px;
-    line-height: 28px;
-  }
-  .bar,
-  .buttonChild {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 389px;
-    height: 64px;
-  }
-  .buttonChild {
-    top: 4px;
-    left: 4px;
-    border-radius: var(--br-7xs);
-    background-color: var(--dark);
-    border: 1px solid var(--dark);
-    box-sizing: border-box;
-    width: 158px;
-    height: 60px;
-  }
-  .subscribe {
-    position: relative;
-    line-height: 30px;
-  }
-  .emailInput {
-    width: 100%;
-    padding: 1px 1px;
-    font-family: 'Gilroy', sans-serif;
-    font-size: 20px;
-    border:0;
-    border-radius: 5px;
-    outline: none;
-  }
-  
-  
-  .subscribeWrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-7xs);
-    background-color: var(--primary-color);
-    border: 1px solid var(--dark);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 15px 37px;
-  }
-  .button {
-    position: absolute;
-    top: 0;
-    left: 408px;
-    width: 162px;
-    height: 64px;
-    text-align: center;
-    font-size: var(--font-size-lg);
-    color: var(--dark);
-  }
-  .areYouReady,
-  .comingSoon,
-  .search {
-    position: absolute;
-    left: 0;
-    width: 570px;
-  }
-  .search {
-    top: 521px;
-    height: 64px;
-    text-align: left;
-  }
-  .areYouReady,
-  .comingSoon {
-    display: inline-block;
-  }
-  .areYouReady {
-    top: 423px;
-    font-size: var(--font-size-lg);
-    line-height: 30px;
-  }
-  .comingSoon {
-    top: 363px;
-    font-size: 42px;
-    letter-spacing: -0.02em;
-    line-height: 42px;
-    color: var(--dark);
-  }
-  .launchingAProject {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 200px);
-    width: 400px;
-    height: 316.5px;
-    overflow: hidden;
-  }
-  .searchParent {
-    position: absolute;
-    top: 30px;
-    left: 435px;
-    width: 570px;
-    height: 585px;
-  }
-  .comingSoonSection2 {
-    width: 100%;
-    position: relative;
-    background-color: var(--white);
-    height: 845px;
-    overflow: hidden;
-    text-align: center;
-    font-size: 16px;
-    color: var(--grey);
-    font-family: var(--font-tt-hoves);
-  }
+    top: -100px;
+    right: 650px;
+    width: 5px;
+    height: 20px;
+    text-size: var(--font-size-md);
+} 
+.vector2{ 
+  position: absolute;
+  bottom: 0px;
+  left: -400px;
+  width: 5px;
+  height: 20px;
+  text-size: var(--font-size-md);
+} 
+.line1{ 
+  position: absolute;
+  top: -100px;
+  left: -580px;
+  text-size: var(--font-size-md);
+} 
+.container {
+  position: absolute;
+  top: -70px;
+  left: -50px;
+}
+.areYouReady {
+  top: 423px;
+  font-size: var(--font-size-lg);
+  line-height: 30px;
+}
+.comingSoon {
+  top: 363px;
+  font-size: 42px;
+  letter-spacing: -0.02em;
+  line-height: 42px;
+  color: var(--dark);
+}
+.launchingAProject {
+  position: absolute;
+  top: 200px;
+  left: -300px;
+  width: 400px;
+  height: 316.5px;
+  overflow: hidden;
+}
+.searchParent {
+  position: absolute;
+  top: 10px;
+  left: 435px;
+  width: 1070px;
+  height: 585px;
+  display: flex;
+  flex-direction: row;
+}
+.comingSoonSection2 {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  height: 845px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 16px;
+  color: var(--grey);
+  font-family: var(--font-tt-hoves);
+}
