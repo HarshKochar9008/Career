@@ -4,6 +4,9 @@
   font-weight: 700;
   font-style: normal;
 }
+body{
+	cursor: url('/assets/3.png'), auto;
+}
 .header {
   position: absolute;
   top: 20px;
