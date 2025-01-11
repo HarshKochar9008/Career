@@ -159,8 +159,8 @@
 } 
 .line1{ 
   position: absolute;
-  top: -100px;
-  left: -580px;
+  top: -410px;
+  left: -800px;
   text-size: var(--font-size-md);
 } 
 .container {

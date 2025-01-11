@@ -55,7 +55,7 @@ const App = () => {
           <img alt="" src="/assets/Vector2.svg" style={{width: 220, height: 200}} />
         </div>
         <div className={styles.line1}>
-          <img alt="" src="/assets/Line 1.png" style={{width: 620, height: 400}} />
+          <img alt="" src="/assets/Line 1.png" style={{width: 1020, height: 800}} />
         </div>
         <img
           className={styles.launchingAProject}
